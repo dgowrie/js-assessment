@@ -51,7 +51,6 @@ define(function() {
       // divisible by 5 and 3
       return 'fizzbuzz';
       */
-    }
 
 
     }
