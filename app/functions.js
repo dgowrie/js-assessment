@@ -4,13 +4,23 @@ define(function() {
   return {
     argsAsArray : function(fn, arr) {
 
+        return fn.apply(this, arr);
+
     },
 
     speak : function(fn, obj) {
 
+        return fn.call(obj);
+
     },
 
     functionFunction : function(str) {
+
+        // solution:
+        return function(arg) {
+            return str + ', ' + arg;
+        }
+        
 
     },
 
